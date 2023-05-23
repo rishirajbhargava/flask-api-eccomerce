@@ -8,9 +8,23 @@
 
     1.Clone the repository.
     2.cd into the directory.
-    3.Database will auto matically created.
-    3.Run pip install -r requirements.txt to install the dependencies.
-    4.Run python app.py or flak run to start the application.
+
+    3.Create a virtual environment with python3 and activate it by running the following commands:
+    ``` 
+    python3 -m venv env
+    env/Scripts/activate
+    ```
+    4.Install the dependencies by running the following command:
+    ```
+    pip install -r requirements.txt
+    ```
+    5.Run the application by running the following command:
+    ```
+    python app.py
+    ```
+
+    6.Database will automatically created.
+   
 
 ## API Documentation
 
