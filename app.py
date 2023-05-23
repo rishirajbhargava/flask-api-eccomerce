@@ -1,4 +1,4 @@
-from flask import Flask , jsonify  , request  
+from flask import Flask , jsonify  , request  , render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime 
 
@@ -37,6 +37,11 @@ class Order(db.Model):
 
 with app.app_context():
     db.create_all()
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route('/users', methods=['GET', 'POST'])
 def users():
